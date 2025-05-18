@@ -1005,6 +1005,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
           min-height: 100vh;
           background-color: var(--dark-color);
           overflow: hidden;
+          
           perspective: 1000px;
           font-family: 'Arial', sans-serif;
         }
@@ -1089,7 +1090,32 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
             padding: 20px;
             color: white;
             text-align: center;
+            overflow-y: auto;
+              position: fixed;
+              z-index: 50;
+              top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
         }
+/* Estiliza la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 250, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 250, 0.8);
+}
 
         .birthday-title {
             font-size: 2.5rem;
@@ -1111,7 +1137,8 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
             transition: transform 0.3s;
-            height: 300px;
+            height: 380px;
+             aspect-ratio: 1/1;
         }
 
         .gallery-item:hover {

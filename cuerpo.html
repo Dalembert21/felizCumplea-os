@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
       <link rel="stylesheet" href="estilos.css">
-      <link rel="icon" type="image/png" href="imagenes/fondo.png">
+      <link rel="icon" type="image/png" href="imagenes/stitch.jpg">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feliz Cumpleaños ❤️</title>
 </head>
 <body class="not-loaded">
-        <div class="night"></div>
+  
+             <div class="night"></div>
         <div class="flowers">
           <div class="flower flower--1">
             <div class="flower__leafs flower__leafs--1">
@@ -308,62 +309,56 @@
             </div>
           </div>
         </div>
-         <div class="access-container" id="accessContainer">
-        <h1>¡Feliz Cumpleaños Mi Cami❤️!</h1>
-     <p>¿Recuerdas cuándo empezó todo? Escribe esa fecha (DDMMAAAA) para ver tu regalo:</p>
-        <input type="password" id="passwordInput" placeholder="Ej: 19032001" maxlength="8">
-        <button onclick="checkPassword()">Acceder</button>
-        <p class="error-message" id="errorMessage">Clave incorrecta. Intenta de nuevo 💔😭😭</p>
-    </div>
+      
 
-    <!-- Contenido principal (oculto inicialmente) -->
-    <div class="main-content" id="mainContent">
-        <h1 class="birthday-title">¡Feliz Cumpleaños Mi Cami Belén❤️!</h1>
-        
-        <div class="message">
-            <p>En este día tan especial, quiero recordarte lo importante que eres para mí. Cada momento a tu lado es un regalo, y hoy quiero celebrarte por la persona maravillosa que eres.</p>
-            <p>Espero que disfrutes este pequeño detalle que preparé con todo mi cariño.</p>
-            <p>Con todo mi amor,<br>Tu novio</p>
-        </div>
-        
-        <h2>Momentos Especiales....😊</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="imagenes/floppy.jpg" alt="Floppy">
-                <div class="gallery-caption">Mi razón de sonreír</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/flooo.jpg" alt="Floppy pequeño">
-                <div class="gallery-caption">Con su compañero fiel</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/cami.jpg" alt="Ariana y Cami + Floppy de pequeños">
-                <div class="gallery-caption">Dos ángeles juntas</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/cumpleCami.jpg" alt="Cumpleaños 19 de Cami">
-                <div class="gallery-caption">Con su compañero fiel</div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/flo elegante.jpg" alt="15 años de Cami">
-                <div class="gallery-caption">Dos ángeles juntas</div>
-            </div>
-        </div>
-        
-        <div class="message">
-            <p>Gracias por ser mi compañera, mi apoyo y mi mayor alegría. Que este año que comienza esté lleno de bendiciones, amor y felicidad.</p>
-            <p>Te amo más de lo que las palabras pueden expresar.</p>
-        </div>
+    <div class="main-content">
+    <h1 class="birthday-title">¡Feliz Cumpleaños Mi Cami Belén❤️!</h1>
+    
+    <div class="message">
+      <p>En este día tan especial, quiero recordarte lo importante que eres para mí. Cada momento a tu lado es un regalo, y hoy quiero celebrarte por la persona maravillosa que eres.</p>
+      <p>Espero que disfrutes este pequeño detalle que preparé con todo mi cariño.</p>
+      <p>Con todo mi amor,<br>Tu novio</p>
     </div>
+    
+    <h2>Momentos Especiales....😊</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="floppy.jpg" alt="Floppy">
+        <div class="gallery-caption">Mi razón de sonreír</div>
+      </div>
+      <div class="gallery-item">
+        <img src="flooo.jpg" alt="Floppy pequeño">
+        <div class="gallery-caption">Con su compañero fiel</div>
+      </div>
+      <div class="gallery-item">
+        <img src="cami.jpg" alt="Ariana y Cami + Floppy de pequeños">
+        <div class="gallery-caption">Dos ángeles juntas</div>
+      </div>
+      <div class="gallery-item">
+        <img src="cumpleCami.jpg" alt="Cumpleaños 19 de Cami">
+        <div class="gallery-caption">Con su compañero fiel</div>
+      </div>
+      <div class="gallery-item">
+        <img src="flo elegante.jpg" alt="15 años de Cami">
+        <div class="gallery-caption">Dos ángeles juntas</div>
+      </div>
+    </div>
+    
+    <div class="message">
+      <p>Gracias por ser mi compañera, mi apoyo y mi mayor alegría. Que este año que comienza esté lleno de bendiciones, amor y felicidad.</p>
+      <p>Te amo más de lo que las palabras pueden expresar.</p>
+    </div>
+  </div>
 
-        <script src="js.js"></script>
+  <script>
+    // Animación de entrada para el contenido
+    document.addEventListener('DOMContentLoaded', () => {
+      const mainContent = document.querySelector('.main-content');
+      mainContent.style.animation = "fadeIn 1.5s";
+    });
+  </script>
       </body>
 </html>  
    
-
-
-    
-
-    
 
 </html>
