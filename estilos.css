@@ -1132,6 +1132,8 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
         }
 
         .gallery-item {
+            perspective: 1000px;
+            cursor: pointer;
             position: relative;
             overflow: hidden;
             border-radius: 10px;
@@ -1155,6 +1157,52 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
         .gallery-item:hover img {
             transform: scale(1.1);
         }
+
+        .gallery-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.gallery-item.flipped .gallery-item-inner {
+    transform: rotateY(180deg);
+}
+
+.gallery-item-front, .gallery-item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.gallery-item-back {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    border: 1px solid #00fffa;
+}
+
+.gallery-description {
+    text-align: center;
+}
+
+.gallery-description h3 {
+    color: #00fffa;
+    margin-bottom: 15px;
+}
+
+.gallery-description p {
+    line-height: 1.6;
+}
 
         .gallery-caption {
             position: absolute;

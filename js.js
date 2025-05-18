@@ -33,6 +33,14 @@
                 }, 500);
             }
         }
+
+        function flipCard(element) {
+    element.classList.toggle('flipped');
+    
+    // Detener la animación de escala al hacer clic
+    const img = element.querySelector('img');
+    img.style.transform = 'scale(1)';
+}
         
         // Permitir presionar Enter para enviar el formulario
         document.getElementById("passwordInput").addEventListener("keyup", function(event) {
