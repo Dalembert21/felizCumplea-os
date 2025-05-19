@@ -41,6 +41,35 @@
     const img = element.querySelector('img');
     img.style.transform = 'scale(1)';
 }
+
+// Control de música
+  const music = document.getElementById('backgroundMusic');
+  const toggleBtn = document.getElementById('musicToggle');
+  const volumeControl = document.getElementById('volumeControl');
+  
+  // Intenta reproducir la música cuando la página se carga
+  document.addEventListener('DOMContentLoaded', function() {
+    music.volume = 0.5; // Volumen inicial al 50%
+    music.play().catch(e => console.log("La reproducción automática fue bloqueada:", e));
+  });
+  
+  // Alternar música al hacer clic en el botón
+  toggleBtn.addEventListener('click', function() {
+    if (music.paused) {
+      music.play();
+      toggleBtn.textContent = '♪';
+      volumeControl.style.display = 'inline-block';
+    } else {
+      music.pause();
+      toggleBtn.textContent = '🔇';
+      volumeControl.style.display = 'none';
+    }
+  });
+  
+  // Control de volumen
+  volumeControl.addEventListener('input', function() {
+    music.volume = this.value;
+  });
         
         // Permitir presionar Enter para enviar el formulario
         document.getElementById("passwordInput").addEventListener("keyup", function(event) {
