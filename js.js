@@ -7,7 +7,7 @@ onload = () => {
 
 // Función para verificar la contraseña
 function checkPassword() {
-    const correctPassword = "26102024"; // La fecha cuando se hicieron novios
+    const correctPassword = "26102024"; // Fecha de cuando nos hicimos enamorados 
     const inputPassword = document.getElementById("passwordInput").value;
     const errorMessage = document.getElementById("errorMessage");
     const accessContainer = document.getElementById("accessContainer");
@@ -51,7 +51,7 @@ const volumeControl = document.getElementById('volumeControl');
 
 // Configuración inicial
 music.volume = 0.5;
-toggleBtn.style.display = 'none'; // Ocultamos el botón inicialmente
+toggleBtn.style.display = 'none'; 
 
 // Función para iniciar la música
 function startMusic() {
@@ -59,7 +59,7 @@ function startMusic() {
 
     if (playPromise !== undefined) {
         playPromise.catch(error => {
-            // Si falla el autoplay, mostramos el botón de control
+            
             toggleBtn.style.display = 'block';
             console.log("La reproducción automática fue bloqueada:", error);
         });

@@ -1024,10 +1024,10 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
         /* Estilos del formulario de acceso */
         .access-container {
-           position: relative; /* Cambiado de static a relative */
-    z-index: 100; /* Asegura que esté por encima de las flores */
-    margin-top: -400px; /* Esto sube el contenedor hacia arriba */
-    /* El resto de tus estilos se mantienen igual */
+           position: relative; 
+    z-index: 100; 
+    margin-top: -400px; 
+    
     text-align: center;
     color: white;
     padding: 20px;
