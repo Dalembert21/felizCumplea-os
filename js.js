@@ -7,7 +7,7 @@ onload = () => {
 
 // Función para verificar la contraseña
 function checkPassword() {
-    const correctPassword = "23042002"; // Fecha de cuando nos hicimos enamorados 
+    const correctPassword = "23052002"; // Fecha de cuando nos hicimos enamorados 
     const inputPassword = document.getElementById("passwordInput").value;
     const errorMessage = document.getElementById("errorMessage");
     const accessContainer = document.getElementById("accessContainer");
