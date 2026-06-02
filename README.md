@@ -1,29 +1,27 @@
-# Página Web de Cumpleaños
+# Birthday Website
 
-## Descripción
+## Description
 
-Este proyecto consiste en una página web de cumpleaños desarrollada con tecnologías web básicas: HTML, CSS y JavaScript. El objetivo es ofrecer una experiencia visual atractiva e interactiva para celebrar cumpleaños mediante una interfaz moderna, animaciones y diseño adaptable a distintos dispositivos.
+This project is a birthday-themed website developed using core web technologies: HTML, CSS, and JavaScript. Its purpose is to provide an engaging and interactive experience for celebrating birthdays through a modern interface, animations, and a responsive design that adapts to different devices.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-* **HTML5**: Estructura y contenido de la página.
-* **CSS3**: Diseño, estilos, animaciones y adaptabilidad.
-* **JavaScript**: Funcionalidades dinámicas e interactividad.
+* **HTML5**: Page structure and content.
+* **CSS3**: Styling, layout, animations, and responsiveness.
+* **JavaScript**: Dynamic features and interactivity.
 
-## Características
+## Features
 
-* Diseño moderno y atractivo.
-* Interfaz completamente responsiva.
-* Compatible con dispositivos móviles, tabletas y computadoras.
-* Animaciones y efectos visuales para mejorar la experiencia del usuario.
-* Navegación sencilla e intuitiva.
+* Modern and attractive design.
+* Fully responsive interface.
+* Compatible with mobile devices, tablets, and desktop computers.
+* Animations and visual effects to enhance user experience.
+* Simple and intuitive navigation.
 
-##  Responsive Design
+## Responsive Design
 
-La página ha sido diseñada siguiendo principios de diseño responsivo, permitiendo una correcta visualización en diferentes tamaños de pantalla y dispositivos.
+The website was built following responsive design principles, ensuring an optimal viewing experience across different screen sizes and devices.
 
-## Despliegue
+## Deployment
 
-La aplicación se encuentra desplegada utilizando **Netlify**, lo que permite un acceso rápido, seguro y disponible en línea.
-
-
+The application is deployed on **Netlify**, providing fast, secure, and reliable online access.
